@@ -12,3 +12,6 @@ def crear_profesor(request):
     profe.save()
     
     return HttpResponse(f"Estoy creando al profe: {profe.nombre} {profe.apellido}. su profesion es {profe.profesion}")
+
+def mostrar_inicio(request):
+    return render(request, "AppCoder/inicio.html")
